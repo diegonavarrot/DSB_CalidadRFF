@@ -1,0 +1,179 @@
+{
+  "config": "{\"version\":\"5.47\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU08\",\"version\":\"5.48\",\"type\":2},\"customTheme\":{\"name\":\"PaletaOleopalma010422981163141332.json\",\"version\":\"5.48\",\"type\":1}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 1,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU08",
+            "path": "BaseThemes/CY23SU08.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "OLEOPALMA_LOGO_ALTA_H_(1)24651722097553397.jpg",
+            "path": "OLEOPALMA_LOGO_ALTA_H_(1)24651722097553397.jpg",
+            "type": 100
+          },
+          {
+            "name": "PaletaOleopalma010422981163141332.json",
+            "path": "PaletaOleopalma010422981163141332.json",
+            "type": 201
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"relationships\":[{\"source\":\"8378a1a519dd34b5a3c0\",\"target\":\"225b4e12ceae6c0d2ded\",\"type\":3},{\"source\":\"426103f840e64844eb00\",\"target\":\"225b4e12ceae6c0d2ded\",\"type\":3},{\"source\":\"c2712a2f0ed7d4aa2e3a\",\"target\":\"975d6fbcb6a4dcdcc515\",\"type\":3},{\"source\":\"c2712a2f0ed7d4aa2e3a\",\"target\":\"225b4e12ceae6c0d2ded\",\"type\":3},{\"source\":\"225b4e12ceae6c0d2ded\",\"target\":\"c2712a2f0ed7d4aa2e3a\",\"type\":3}],\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.1}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"39D\"}}}}}],\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"187L\"}}}}}]}}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"0fc7b3648e0255503103\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1163.8169123351436,\"y\":46.67183863460046,\"z\":11000,\"width\":102.28083785880527,\"height\":30.78355314197052,\"tabOrder\":11000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":4,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 30.78,
+          "width": 102.28,
+          "x": 1163.82,
+          "y": 46.67,
+          "z": 11000.00
+        },
+        {
+          "config": "{\"name\":\"225b4e12ceae6c0d2ded\",\"layouts\":[{\"id\":0,\"position\":{\"x\":871.9398496240601,\"y\":125.11278195488721,\"z\":5000,\"width\":394.5864661654135,\"height\":286.796992481203,\"tabOrder\":4000}},{\"id\":1,\"position\":{\"x\":0,\"y\":407,\"z\":5000,\"width\":323,\"height\":252,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"areaChart\",\"projections\":{\"Series\":[{\"queryRef\":\"CalidadRFF.Fecha Hierarchy.Año\"}],\"Y\":[{\"queryRef\":\"CalidadRFF.Pct_MadurosPonderado\"}],\"Category\":[{\"queryRef\":\"AuxMes.Abreviatura\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CalidadRFF\",\"Type\":0},{\"Name\":\"a\",\"Entity\":\"AuxMes\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Hierarchy\":\"Fecha Hierarchy\"}},\"Level\":\"Año\"},\"Name\":\"CalidadRFF.Fecha Hierarchy.Año\",\"NativeReferenceName\":\"Fecha Hierarchy Año\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Pct_MadurosPonderado\"},\"Name\":\"CalidadRFF.Pct_MadurosPonderado\",\"NativeReferenceName\":\"Pct_MadurosPonderado\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Abreviatura\"},\"Name\":\"AuxMes.Abreviatura\",\"NativeReferenceName\":\"Abreviatura\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"a\"}},\"Property\":\"Abreviatura\"}}}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"axisType\":{\"expr\":{\"Literal\":{\"Value\":\"'Categorical'\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"showTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'% Racimos Maduros vs Año Anterior'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"5D\"}}}}}],\"visualTooltip\":[{\"properties\":{\"section\":{\"expr\":{\"Literal\":{\"Value\":\"'___AUTO___'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 286.80,
+          "width": 394.59,
+          "x": 871.94,
+          "y": 125.11,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"2b426a19482bb898b33d\",\"layouts\":[{\"id\":0,\"position\":{\"x\":11.14012184508268,\"y\":5.57006092254134,\"z\":13000,\"width\":178.24194952132288,\"height\":110.28720626631853,\"tabOrder\":13000}},{\"id\":1,\"position\":{\"x\":0,\"y\":5,\"z\":6000,\"width\":170,\"height\":76,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"OLEOPALMA_LOGO_ALTA_H_(1)24651722097553397.jpg\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 110.29,
+          "width": 178.24,
+          "x": 11.14,
+          "y": 5.57,
+          "z": 13000.00
+        },
+        {
+          "config": "{\"name\":\"426103f840e64844eb00\",\"layouts\":[{\"id\":0,\"position\":{\"x\":974.7606614447345,\"y\":22.28024369016536,\"z\":1000,\"width\":154.84769364664925,\"height\":79.09486510008703,\"tabOrder\":0}},{\"id\":1,\"position\":{\"x\":180,\"y\":81,\"z\":3000,\"width\":144,\"height\":64,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"CalidadRFF.Ticket\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CalidadRFF\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Ticket\"},\"Name\":\"CalidadRFF.Ticket\",\"NativeReferenceName\":\"Ticket\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 79.09,
+          "width": 154.85,
+          "x": 974.76,
+          "y": 22.28,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"71ca0e51d4b39b03c120\",\"layouts\":[{\"id\":0,\"position\":{\"x\":546.9799825935596,\"y\":22.28024369016536,\"z\":7000,\"width\":223.91644908616186,\"height\":76.8668407310705,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"CalidadRFF.Predio\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CalidadRFF\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Predio\"},\"Name\":\"CalidadRFF.Predio\",\"NativeReferenceName\":\"Predio\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 76.87,
+          "width": 223.92,
+          "x": 546.98,
+          "y": 22.28,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"8378a1a519dd34b5a3c0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":756.414273281114,\"y\":41.21845082680591,\"z\":2000,\"width\":228.37249782419494,\"height\":66.84073107049608,\"tabOrder\":1000}},{\"id\":1,\"position\":{\"x\":186,\"y\":5,\"z\":1000,\"width\":132,\"height\":83,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"CalidadRFF.Fecha Hierarchy.Fecha\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CalidadRFF\",\"Type\":0}],\"Select\":[{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Hierarchy\":\"Fecha Hierarchy\"}},\"Level\":\"Fecha\"},\"Name\":\"CalidadRFF.Fecha Hierarchy.Fecha\",\"NativeReferenceName\":\"Fecha Hierarchy Fecha\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Hierarchy\":\"Fecha Hierarchy\"}},\"Level\":\"Fecha\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"startDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2023-09-18T00:00:00'\"}}},\"endDate\":{\"expr\":{\"Literal\":{\"Value\":\"datetime'2023-09-22T00:00:00'\"}}},\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Between'\"}}}}}],\"slider\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CalidadRFF\",\"Type\":0}],\"Where\":[{\"Condition\":{\"And\":{\"Left\":{\"Comparison\":{\"ComparisonKind\":2,\"Left\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Hierarchy\":\"Fecha Hierarchy\"}},\"Level\":\"Fecha\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2023-09-18T00:00:00'\"}}}},\"Right\":{\"Comparison\":{\"ComparisonKind\":3,\"Left\":{\"HierarchyLevel\":{\"Expression\":{\"Hierarchy\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Hierarchy\":\"Fecha Hierarchy\"}},\"Level\":\"Fecha\"}},\"Right\":{\"Literal\":{\"Value\":\"datetime'2023-09-23T00:00:00'\"}}}}}}}]}}}}],\"header\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Fecha'\"}}},\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"date\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"9D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 66.84,
+          "width": 228.37,
+          "x": 756.41,
+          "y": 41.22,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"9545710f34726630a249\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1147.9286268425135,\"y\":15.888285492629945,\"z\":10000,\"width\":118.16912335143522,\"height\":30.78355314197052,\"tabOrder\":10000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 30.78,
+          "width": 118.17,
+          "x": 1147.93,
+          "y": 15.89,
+          "z": 10000.00
+        },
+        {
+          "config": "{\"name\":\"975d6fbcb6a4dcdcc515\",\"layouts\":[{\"id\":0,\"position\":{\"x\":584.1804511278195,\"y\":125.11278195488721,\"z\":4000,\"width\":277.17293233082705,\"height\":286.796992481203,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"donutChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CalidadRFF.Pct_MadurosPonderado\"},{\"queryRef\":\"CalidadRFF.Pct_PodridoPonderado\"},{\"queryRef\":\"CalidadRFF.Pct_SobreMadPonderado\"},{\"queryRef\":\"CalidadRFF.Pct_VerdesPonderado\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CalidadRFF\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Pct_MadurosPonderado\"},\"Name\":\"CalidadRFF.Pct_MadurosPonderado\",\"NativeReferenceName\":\"Maduros\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Pct_PodridoPonderado\"},\"Name\":\"CalidadRFF.Pct_PodridoPonderado\",\"NativeReferenceName\":\"Podridos\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Pct_SobreMadPonderado\"},\"Name\":\"CalidadRFF.Pct_SobreMadPonderado\",\"NativeReferenceName\":\"Sobremaduro\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Pct_VerdesPonderado\"},\"Name\":\"CalidadRFF.Pct_VerdesPonderado\",\"NativeReferenceName\":\"Verdes\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Pct_MadurosPonderado\"}}}]},\"columnProperties\":{\"CalidadRFF.Pct_MadurosPonderado\":{\"displayName\":\"Maduros\"},\"CalidadRFF.Pct_PodridoPonderado\":{\"displayName\":\"Podridos\"},\"CalidadRFF.Pct_SobreMadPonderado\":{\"displayName\":\"Sobremaduro\"},\"CalidadRFF.Pct_VerdesPonderado\":{\"displayName\":\"Verdes\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'preferOutside'\"}}},\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Data'\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"padding\":[{\"properties\":{\"left\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"bottom\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"right\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"top\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"5D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 286.80,
+          "width": 277.17,
+          "x": 584.18,
+          "y": 125.11,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"ae58600ccc417451a868\",\"layouts\":[{\"id\":0,\"position\":{\"x\":189.38207136640557,\"y\":22.28024369016536,\"z\":6000,\"width\":357.59791122715404,\"height\":76.8668407310705,\"tabOrder\":5000}},{\"id\":1,\"position\":{\"x\":1,\"y\":81,\"z\":2000,\"width\":179,\"height\":67,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"CalidadRFF.Productor\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CalidadRFF\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Productor\"},\"Name\":\"CalidadRFF.Productor\",\"NativeReferenceName\":\"Productor\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"selfFilterEnabled\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"items\":[{\"properties\":{\"textSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 76.87,
+          "width": 357.60,
+          "x": 189.38,
+          "y": 22.28,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"c2712a2f0ed7d4aa2e3a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":11.548872180451127,\"y\":125.11278195488721,\"z\":3000,\"width\":564.9323308270676,\"height\":583.218045112782,\"tabOrder\":2000}},{\"id\":1,\"position\":{\"x\":1,\"y\":151,\"z\":4000,\"width\":323,\"height\":246,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"columnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"CalidadRFF.Pct_MadurosPonderado\"},{\"queryRef\":\"CalidadRFF.Pct_VerdesPonderado\"},{\"queryRef\":\"CalidadRFF.Pct_SobreMadPonderado\"},{\"queryRef\":\"CalidadRFF.Pct_PodridoPonderado\"}],\"Category\":[{\"queryRef\":\"CalidadRFF.Mes\"},{\"queryRef\":\"CalidadRFF.Fecha\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CalidadRFF\",\"Type\":0}],\"Select\":[{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Pct_MadurosPonderado\"},\"Name\":\"CalidadRFF.Pct_MadurosPonderado\",\"NativeReferenceName\":\"Maduros\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Pct_VerdesPonderado\"},\"Name\":\"CalidadRFF.Pct_VerdesPonderado\",\"NativeReferenceName\":\"Verdes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Pct_SobreMadPonderado\"},\"Name\":\"CalidadRFF.Pct_SobreMadPonderado\",\"NativeReferenceName\":\"SobreMaduro\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Pct_PodridoPonderado\"},\"Name\":\"CalidadRFF.Pct_PodridoPonderado\",\"NativeReferenceName\":\"Podridos\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Mes\"},\"Name\":\"CalidadRFF.Mes\",\"NativeReferenceName\":\"Mes\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Fecha\"},\"Name\":\"CalidadRFF.Fecha\",\"NativeReferenceName\":\"Fecha\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Mes\"}}}]},\"columnProperties\":{\"CalidadRFF.Pct_MadurosPonderado\":{\"displayName\":\"Maduros\"},\"CalidadRFF.Pct_VerdesPonderado\":{\"displayName\":\"Verdes\"},\"CalidadRFF.Pct_SobreMadPonderado\":{\"displayName\":\"SobreMaduro\"},\"CalidadRFF.Pct_PodridoPonderado\":{\"displayName\":\"Podridos\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"categoryAxis\":[{\"properties\":{\"axisType\":{\"expr\":{\"Literal\":{\"Value\":\"'Categorical'\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"maxMarginFactor\":{\"expr\":{\"Literal\":{\"Value\":\"25L\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"concatenateLabels\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"bold\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"showAxisTitle\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"legend\":[{\"properties\":{\"position\":{\"expr\":{\"Literal\":{\"Value\":\"'TopCenter'\"}}}}}],\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'InsideCenter'\"}}},\"enableBackground\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"backgroundColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"backgroundTransparency\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}},\"labelOverflow\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"showDynamicLabels\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}},\"labelOrientation\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Arial'\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'% Calidad de RFF'\"}}},\"alignment\":{\"expr\":{\"Literal\":{\"Value\":\"'center'\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"5D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 583.22,
+          "width": 564.93,
+          "x": 11.55,
+          "y": 125.11,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"c83fc02b269cc3047cb0\",\"layouts\":[{\"id\":0,\"position\":{\"x\":11.662870159453304,\"y\":15.550493545937739,\"z\":0,\"width\":1254.7304479878512,\"height\":94.27486712224754,\"tabOrder\":8000}},{\"id\":1,\"position\":{\"x\":1,\"y\":5,\"z\":0,\"width\":323,\"height\":140,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangleRounded'\"}}},\"rectangleRoundedCurve\":{\"expr\":{\"Literal\":{\"Value\":\"10L\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}},\"selector\":{\"id\":\"default\"}}]}}}",
+          "filters": "[]",
+          "height": 94.27,
+          "width": 1254.73,
+          "x": 11.66,
+          "y": 15.55,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"cc1bc8549edea109b0c1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":770.8964316797214,\"y\":22.28024369016536,\"z\":9000,\"width\":79.09486510008703,\"height\":28.96431679721497,\"tabOrder\":9000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Fecha\",\"textStyle\":{\"fontFamily\":\"DIN\",\"fontSize\":\"12pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 28.96,
+          "width": 79.09,
+          "x": 770.90,
+          "y": 22.28,
+          "z": 9000.00
+        },
+        {
+          "config": "{\"name\":\"e1b2519f8d04062056b9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":584.1804511278195,\"y\":416.7218045112782,\"z\":8000,\"width\":682.3458646616541,\"height\":291.609022556391,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"pivotTable\",\"projections\":{\"Rows\":[{\"queryRef\":\"CalidadRFF.Productor\",\"active\":true},{\"queryRef\":\"CalidadRFF.Predio\"},{\"queryRef\":\"CalidadRFF.Ticket\"}],\"Values\":[{\"queryRef\":\"CalidadRFF.TonRFF\"},{\"queryRef\":\"CalidadRFF.Pct_VerdesPonderado\"},{\"queryRef\":\"CalidadRFF.Pct_MadurosPonderado\"},{\"queryRef\":\"CalidadRFF.Pct_SobreMadPonderado\"},{\"queryRef\":\"CalidadRFF.Pct_PodridoPonderado\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CalidadRFF\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Productor\"},\"Name\":\"CalidadRFF.Productor\",\"NativeReferenceName\":\"Productor\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Predio\"},\"Name\":\"CalidadRFF.Predio\",\"NativeReferenceName\":\"Predio\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Pct_MadurosPonderado\"},\"Name\":\"CalidadRFF.Pct_MadurosPonderado\",\"NativeReferenceName\":\"Pct_MadurosPonderado\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Ticket\"},\"Name\":\"CalidadRFF.Ticket\",\"NativeReferenceName\":\"Ticket\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Pct_VerdesPonderado\"},\"Name\":\"CalidadRFF.Pct_VerdesPonderado\",\"NativeReferenceName\":\"Verdes\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Pct_SobreMadPonderado\"},\"Name\":\"CalidadRFF.Pct_SobreMadPonderado\",\"NativeReferenceName\":\"SobreMad\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"Pct_PodridoPonderado\"},\"Name\":\"CalidadRFF.Pct_PodridoPonderado\",\"NativeReferenceName\":\"Podridos\"},{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"TonRFF\"},\"Name\":\"CalidadRFF.TonRFF\",\"NativeReferenceName\":\"Ton\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"TonRFF\"}}}]},\"expansionStates\":[{\"roles\":[\"Rows\"],\"levels\":[{\"queryRefs\":[\"CalidadRFF.Productor\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CalidadRFF\"}},\"Property\":\"Productor\"}}],\"isPinned\":true},{\"queryRefs\":[\"CalidadRFF.Predio\"],\"isCollapsed\":true,\"identityKeys\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CalidadRFF\"}},\"Property\":\"Predio\"}}],\"isPinned\":true},{\"queryRefs\":[\"CalidadRFF.Ticket\"],\"isCollapsed\":true,\"isPinned\":true}],\"root\":{\"identityValues\":null}}],\"columnProperties\":{\"CalidadRFF.Pct_MadurosPonderado\":{\"displayName\":\"Maduros\"},\"CalidadRFF.Pct_VerdesPonderado\":{\"displayName\":\"Verdes\"},\"CalidadRFF.Pct_SobreMadPonderado\":{\"displayName\":\"SobreMad\"},\"CalidadRFF.Pct_PodridoPonderado\":{\"displayName\":\"Podridos\"},\"CalidadRFF.TonRFF\":{\"displayName\":\"Ton\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"columnWidth\":[{\"properties\":{\"value\":{\"expr\":{\"Literal\":{\"Value\":\"326.8991546321855D\"}}}},\"selector\":{\"metadata\":\"CalidadRFF.Productor\"}}],\"values\":[{\"properties\":{\"icon\":{\"kind\":\"Icon\",\"layout\":{\"expr\":{\"Literal\":{\"Value\":\"'Before'\"}}},\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}},\"value\":{\"expr\":{\"Conditional\":{\"Cases\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CalidadRFF\"}},\"Property\":\"bitRacimosMaduros\"}},\"Right\":{\"Literal\":{\"Value\":\"1D\"}}}},\"Value\":{\"Literal\":{\"Value\":\"'CircleHigh'\"}}},{\"Condition\":{\"Comparison\":{\"ComparisonKind\":0,\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CalidadRFF\"}},\"Property\":\"bitRacimosMaduros\"}},\"Right\":{\"Literal\":{\"Value\":\"0D\"}}}},\"Value\":{\"Literal\":{\"Value\":\"'SignLow'\"}}}]}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}],\"metadata\":\"CalidadRFF.Pct_MadurosPonderado\"}},{\"properties\":{},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":0}}],\"metadata\":\"CalidadRFF.Pct_MadurosPonderado\"}},{\"properties\":{},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":2}}],\"metadata\":\"CalidadRFF.Pct_MadurosPonderado\"}},{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"columnFormatting\":[{\"properties\":{},\"selector\":{\"metadata\":\"CalidadRFF.Pct_MadurosPonderado\"}}]},\"vcObjects\":{\"stylePreset\":[{\"properties\":{\"name\":{\"expr\":{\"Literal\":{\"Value\":\"'FlashyRows'\"}}}}}],\"background\":[{\"properties\":{\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"20D\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"5D\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Arithmetic\":{\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CalidadRFF\"}},\"Property\":\"Pct_MadurosPonderado\"}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CalidadRFF\"}},\"Property\":\"Pct_MadurosPonderado\"}},\"Scope\":[]}},\"Operator\":3}},\"type\":\"Advanced\",\"howCreated\":1,\"isHiddenInViewMode\":false},{\"expression\":{\"Arithmetic\":{\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CalidadRFF\"}},\"Property\":\"Pct_MadurosPonderado\"}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CalidadRFF\"}},\"Property\":\"Pct_MadurosPonderado\"}},\"Scope\":[{\"RoleRef\":{\"Role\":\"Columns\"}}]}},\"Operator\":3}},\"type\":\"Advanced\",\"howCreated\":1,\"isHiddenInViewMode\":false},{\"expression\":{\"Arithmetic\":{\"Left\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CalidadRFF\"}},\"Property\":\"Pct_MadurosPonderado\"}},\"Right\":{\"ScopedEval\":{\"Expression\":{\"Measure\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"CalidadRFF\"}},\"Property\":\"Pct_MadurosPonderado\"}},\"Scope\":[{\"RoleRef\":{\"Role\":\"Rows\"}}]}},\"Operator\":3}},\"type\":\"Advanced\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 291.61,
+          "width": 682.35,
+          "x": 584.18,
+          "y": 416.72,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"ff775295373e01a0b229\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1181.6912335143522,\"y\":77.45539177657098,\"z\":12000,\"width\":84.40651667959658,\"height\":30.78355314197052,\"tabOrder\":12000}}],\"singleVisual\":{\"visualType\":\"shape\",\"drillFilterOtherVisuals\":true,\"objects\":{\"shape\":[{\"properties\":{\"tileShape\":{\"expr\":{\"Literal\":{\"Value\":\"'rectangle'\"}}}}}],\"rotation\":[{\"properties\":{\"shapeAngle\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}],\"fill\":[{\"properties\":{\"fillColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":3,\"Percent\":0}}}}}},\"selector\":{\"id\":\"default\"}}],\"outline\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 30.78,
+          "width": 84.41,
+          "x": 1181.69,
+          "y": 77.46,
+          "z": 12000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "PaletaOleopalma010422981163141332.json"
+}

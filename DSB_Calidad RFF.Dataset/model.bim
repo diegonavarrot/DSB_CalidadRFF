@@ -1,0 +1,905 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"CalidadRFF\",\"AuxMes\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.121.903.0 (23.09)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "DynamicImprovement": "HighConfidence",
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "73a72a46-11f4-406f-81b4-ec695598f542",
+        "fromColumn": "Mes",
+        "fromTable": "CalidadRFF",
+        "toColumn": "No",
+        "toTable": "AuxMes"
+      }
+    ],
+    "sourceQueryCulture": "es-MX",
+    "tables": [
+      {
+        "name": "CalidadRFF",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Productor",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "displayFolder": "Generales",
+            "lineageTag": "ec517e16-dbb0-45b7-957c-20fa59002367",
+            "sourceColumn": "Productor",
+            "sourceProviderType": "varchar(207)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Tipo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "displayFolder": "Generales",
+            "isNullable": false,
+            "lineageTag": "0fb80a76-195f-4579-bdfa-b045d6fecbce",
+            "sourceColumn": "Tipo",
+            "sourceProviderType": "varchar(9)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Fecha",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isDateTimeCustom\":true}"
+              },
+              {
+                "name": "UnderlyingDateTimeDataType",
+                "value": "Date"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "dateTime",
+            "displayFolder": "Fechas",
+            "formatString": "dd/mm/yyyy",
+            "lineageTag": "85d130f9-d0d2-41bb-bd2e-78b9006d54c2",
+            "sourceColumn": "Fecha",
+            "sourceProviderType": "date",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CodigoPredio",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "displayFolder": "Generales",
+            "isHidden": true,
+            "isNullable": false,
+            "lineageTag": "e1ed0cc9-d10e-494f-894e-6fbbb828c2c0",
+            "sourceColumn": "CodigoPredio",
+            "sourceProviderType": "varchar(25)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Predio",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "displayFolder": "Generales",
+            "isNullable": false,
+            "lineageTag": "d6b015c6-4288-437a-8945-8549c096f7a8",
+            "sourceColumn": "Predio",
+            "sourceProviderType": "varchar(35)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Ticket",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "displayFolder": "Generales",
+            "isNullable": false,
+            "lineageTag": "6f130e1d-8314-4963-9849-57e43b28b050",
+            "sourceColumn": "Ticket",
+            "sourceProviderType": "varchar(15)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Kilos",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "displayFolder": "Datos_SQL",
+            "lineageTag": "31231c4d-9843-4836-8616-c1db184f40e4",
+            "sourceColumn": "Kilos",
+            "sourceProviderType": "decimal(38, 2)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Racimos_Verdes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "displayFolder": "Datos_SQL",
+            "lineageTag": "7cfeab9e-f876-42ff-9ddd-785cae944222",
+            "sourceColumn": "Racimos_Verdes",
+            "sourceProviderType": "decimal(38, 3)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Racimos_Maduros",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "displayFolder": "Datos_SQL",
+            "lineageTag": "2897a088-62f0-49c4-92d9-97fa466a2ad0",
+            "sourceColumn": "Racimos_Maduros",
+            "sourceProviderType": "decimal(38, 3)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Racimos_SobreMaduros",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "displayFolder": "Datos_SQL",
+            "lineageTag": "ed6c6798-f1a1-4f43-ac9d-89388f9ae047",
+            "sourceColumn": "Racimos_SobreMaduros",
+            "sourceProviderType": "decimal(38, 3)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Racimos_Podridos",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "displayFolder": "Datos_SQL",
+            "lineageTag": "69ec07f0-5b86-4655-9edf-484cf95cad81",
+            "sourceColumn": "Racimos_Podridos",
+            "sourceProviderType": "decimal(38, 3)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Racimos_Inspeccionados",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "displayFolder": "Datos_SQL",
+            "lineageTag": "b34dccd4-fedf-41b3-86da-be6d4efd49ec",
+            "sourceColumn": "Racimos_Inspeccionados",
+            "sourceProviderType": "decimal(38, 3)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Pct_Verdes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "displayFolder": "Datos_SQL",
+            "lineageTag": "472c8461-7793-468c-adf5-4ac32cb5e0e4",
+            "sourceColumn": "Pct_Verdes",
+            "sourceProviderType": "decimal(38, 6)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Pct_Maduros",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "displayFolder": "Datos_SQL",
+            "lineageTag": "41f22beb-38f5-41a0-929c-bdbab0e7286c",
+            "sourceColumn": "Pct_Maduros",
+            "sourceProviderType": "decimal(38, 6)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Pct_SobreMaduro",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "displayFolder": "Datos_SQL",
+            "lineageTag": "a104acf0-02d0-4748-adc5-4224fdc0521f",
+            "sourceColumn": "Pct_SobreMaduro",
+            "sourceProviderType": "decimal(38, 6)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Pct_Podridos",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "displayFolder": "Datos_SQL",
+            "lineageTag": "a6d2a6e5-931b-41d4-9edb-92191f6b178f",
+            "sourceColumn": "Pct_Podridos",
+            "sourceProviderType": "decimal(38, 6)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Kg_Verdes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "displayFolder": "Datos_Calculados_SQL",
+            "lineageTag": "54ab3f18-5d0f-42ae-b3c8-5b05c1ab11ca",
+            "sourceColumn": "Kg_Verdes",
+            "sourceProviderType": "decimal(38, 6)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Kg_MadurosPonderado",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "displayFolder": "Datos_Calculados_SQL",
+            "lineageTag": "f7f3bbde-edec-401d-ba67-6bbab4c25c78",
+            "sourceColumn": "Kg_MadurosPonderado",
+            "sourceProviderType": "decimal(38, 6)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Kg_SobreMaduroPonderado",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "displayFolder": "Datos_Calculados_SQL",
+            "lineageTag": "e6bc5426-765b-489b-b7dc-665fdc404d9a",
+            "sourceColumn": "Kg_SobreMaduroPonderado",
+            "sourceProviderType": "decimal(38, 6)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Kg_PodridosPonderado",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "displayFolder": "Datos_Calculados_SQL",
+            "lineageTag": "ea166cfc-6e40-4c72-a1ab-a18f73e56297",
+            "sourceColumn": "Kg_PodridosPonderado",
+            "sourceProviderType": "decimal(38, 6)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Año",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "displayFolder": "Fechas",
+            "formatString": "0",
+            "lineageTag": "aa0513f4-bf44-4f0d-9584-bc8a15fcadfa",
+            "sourceColumn": "Año",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Mes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "displayFolder": "Fechas",
+            "formatString": "0",
+            "lineageTag": "90241bab-40ae-4d77-a65d-ffe9ddfbc3dc",
+            "sourceColumn": "Mes",
+            "sourceProviderType": "int",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Dia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "displayFolder": "Fechas",
+            "formatString": "0",
+            "lineageTag": "e6ec5007-e803-4fe3-9d80-120adc85d3a0",
+            "sourceColumn": "Dia",
+            "sourceProviderType": "int",
+            "summarizeBy": "sum"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Fecha Hierarchy",
+            "displayFolder": "Fechas",
+            "levels": [
+              {
+                "name": "Fecha",
+                "column": "Fecha",
+                "lineageTag": "d4021e7e-f5de-44fa-a02f-f97772bbb18f",
+                "ordinal": 0
+              },
+              {
+                "name": "Año",
+                "column": "Año",
+                "lineageTag": "3cd6f2c1-76ca-4481-9f35-d2c8701d458a",
+                "ordinal": 1
+              },
+              {
+                "name": "Mes",
+                "column": "Mes",
+                "lineageTag": "04730c22-50a4-4791-b74a-60dc3fb5637c",
+                "ordinal": 2
+              },
+              {
+                "name": "Dia",
+                "column": "Dia",
+                "lineageTag": "3fdb24d1-9762-444d-a358-21c9f2725a5d",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "69b1b382-15c8-423c-9782-72fe1addecd1"
+          }
+        ],
+        "lineageTag": "be073c66-7b60-4f16-89a7-75fe734d9e42",
+        "measures": [
+          {
+            "name": "Pct_MadurosPonderado",
+            "displayFolder": "Measures",
+            "expression": "SUM(CalidadRFF[Kg_MadurosPonderado])/SUM(CalidadRFF[Kilos])",
+            "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+            "lineageTag": "afc66a5d-1be9-4e57-b048-f104e598aceb"
+          },
+          {
+            "name": "Pct_VerdesPonderado",
+            "displayFolder": "Measures",
+            "expression": "SUM(CalidadRFF[Kg_Verdes])/SUM(CalidadRFF[Kilos])",
+            "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+            "lineageTag": "976835d5-05f2-41a0-84af-6a55a83d1d19"
+          },
+          {
+            "name": "Pct_SobreMadPonderado",
+            "displayFolder": "Measures",
+            "expression": "SUM(CalidadRFF[Kg_SobreMaduroPonderado])/SUM(CalidadRFF[Kilos])",
+            "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+            "lineageTag": "f5943ebc-bd55-4b5d-bfe7-c4340d765b7f"
+          },
+          {
+            "name": "Pct_PodridoPonderado",
+            "displayFolder": "Measures",
+            "expression": "SUM(CalidadRFF[Kg_PodridosPonderado])/SUM(CalidadRFF[Kilos])",
+            "formatString": "0.00\\ %;-0.00\\ %;0.00\\ %",
+            "lineageTag": "cb23fb9e-baca-40f6-b032-c3226f5dea5d"
+          },
+          {
+            "name": "bitRacimosMaduros",
+            "displayFolder": "Measures",
+            "expression": "IF(SUM(CalidadRFF[Kg_MadurosPonderado])/SUM(CalidadRFF[Kilos])>=0.9,1,0)",
+            "formatString": "0",
+            "lineageTag": "1b8b47a5-6c3b-4cfa-a046-a6d3e150f01f"
+          },
+          {
+            "name": "Pct_MadurosSinPonderar",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Measures",
+            "expression": "SUM(CalidadRFF[Kg_MadurosPonderado])/(SUM(CalidadRFF[Kg_MadurosPonderado])+SUM(CalidadRFF[Kg_PodridosPonderado])+SUM(CalidadRFF[Kg_SobreMaduroPonderado])+SUM(CalidadRFF[Kg_Verdes]))",
+            "lineageTag": "1062f0e8-2a74-4a97-9b12-e96b6730b507"
+          },
+          {
+            "name": "TonRFF",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "displayFolder": "Measures",
+            "expression": "SUM(CalidadRFF[Kilos])/1000 + 0",
+            "lineageTag": "5832d63c-d91b-4b6b-beaf-36a9ab8268b5"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "CalidadRFF",
+            "mode": "directQuery",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"192.168.100.200\\Palenque1\", \"Palenque\", [Query=\"/*#(lf)OBJETIVO: Tickets de CALIDAD RFF [palmicultor y comprador] para generar dashboard de calidad RFF#(lf)AUTOR: Diego Navarro#(lf)FECHA CREACIÓN: 20230921#(lf)FECHA MODIFICACIÓN: --#(lf)*/#(lf)#(lf)SELECT vchPalmicultor Productor,#(lf)#(tab)   'Productor' AS Tipo,#(lf)#(tab)   CONVERT(DATE,dtmFecha) Fecha,#(lf)#(tab)   DATEPART(yy,dtmFecha) 'Año',#(lf)#(tab)   DATEPART(mm,dtmFecha) 'Mes',#(lf)#(tab)   DATEPART(dd,dtmFecha) 'Dia',#(lf)#(tab)   vchCodigoPredio CodigoPredio,#(lf)#(tab)   vchPredio Predio,#(lf)#(tab)   vchTicket Ticket,#(lf)#(tab)   SUM(decKilos) Kilos,#(lf)#(tab)   SUM(decRacimosVerdes) Racimos_Verdes,#(lf)#(tab)   SUM(decRacimosMaduros) Racimos_Maduros,#(lf)#(tab)   SUM(decRacimosSobremaduros) Racimos_SobreMaduros,#(lf)#(tab)   SUM(decRacimosPodridos) Racimos_Podridos,#(lf)#(tab)   SUM(decRacimosInspeccionados) Racimos_Inspeccionados,#(lf)#(tab)   SUM(decRacimosVerdes)/SUM(decRacimosInspeccionados) Pct_Verdes,#(lf)#(tab)   SUM(decRacimosMaduros)/SUM(decRacimosInspeccionados) Pct_Maduros,#(lf)#(tab)   SUM(decRacimosSobremaduros)/SUM(decRacimosInspeccionados) Pct_SobreMaduro,#(lf)#(tab)   SUM(decRacimosPodridos)/SUM(decRacimosInspeccionados) Pct_Podridos,#(lf)#(tab)   SUM(decRacimosVerdes)/SUM(decRacimosInspeccionados) * SUM(decKilos) Kg_Verdes,#(lf)#(tab)   SUM(decRacimosMaduros)/SUM(decRacimosInspeccionados) * SUM(decKilos) Kg_MadurosPonderado,#(lf)#(tab)   SUM(decRacimosSobremaduros)/SUM(decRacimosInspeccionados) * SUM(decKilos) Kg_SobreMaduroPonderado,#(lf)#(tab)   SUM(decRacimosPodridos)/SUM(decRacimosInspeccionados) * SUM(decKilos) Kg_PodridosPonderado#(lf)  FROM vwCOMCompras#(lf) WHERE CONVERT(DATE,dtmFecha) >= '20220101'#(lf)#(tab)   AND decRacimosInspeccionados > 0#(lf)#(tab)   AND intCOMAgricultorKey <> 0#(lf)#(tab)   AND intCOMCompradorKey = 0#(lf) GROUP BY#(lf)#(tab)   vchPalmicultor,#(lf)#(tab)   vchPredio,#(lf)#(tab)   dtmFecha,#(lf)#(tab)   vchCodigoPredio,#(lf)#(tab)   vchPredio,#(lf)#(tab)   vchTicket\"])",
+                "in",
+                "    Source"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "AuxMes",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "No",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "DataType"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "338f0b88-154c-44f9-b95d-8676ad4865cb",
+            "sourceColumn": "No",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Abreviatura",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2e165033-f3b0-4c84-96d4-fb04b231e0da",
+            "sortByColumn": "No",
+            "sourceColumn": "Abreviatura",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Nombre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "995e9cb5-ad7d-4dc8-8547-413e19f750e2",
+            "sourceColumn": "Nombre",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "6cdd4462-9753-4c1c-9962-41380fa8b8ba",
+        "partitions": [
+          {
+            "name": "AuxMes",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i45WMlTSUXLNS4WQRflKsTrRSkZAnltqEoQsgokaA/m+iUUQsgoiZgLkOSYVQcjMHLCYKVhFJYSEKDMDcrxK8yBkJkTMHMzLgZBQMQuQQen5ELK4BCJoCeQGpxZAyJLM1Fygk8AShgZAMf/kEghZChcGeckvvwxCIqsH+cslMxlCwiRiAQ==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [No = _t, Abreviatura = _t, Nombre = _t])",
+                "in",
+                "    Source"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_f5783ad7-7bcf-4285-9455-4d701cf7e8c0",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "01f62772-4894-41f3-b400-760f562e50bf",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Year",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "isHidden": true,
+            "lineageTag": "2e3ee2de-4085-4b7c-b708-054863075e70",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MonthNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "isHidden": true,
+            "lineageTag": "98c56aff-bfb6-4b97-98a6-34b3ede96bdb",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Month",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "c63b472f-bbfd-49dd-9998-4776a936a1ae",
+            "sortByColumn": "MonthNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "QuarterNo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([MonthNo] + 2) / 3)",
+            "isHidden": true,
+            "lineageTag": "77ff9d96-0ccc-4f89-8c2d-22bc0afa7e67",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Quarter",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Qtr \" & [QuarterNo]",
+            "isHidden": true,
+            "lineageTag": "82fd942a-43ce-4a84-9292-d5fca024a1da",
+            "sortByColumn": "QuarterNo",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Day",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "isHidden": true,
+            "lineageTag": "057b6855-169c-462f-8d84-d71709790d98",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Date Hierarchy",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Year",
+                "column": "Year",
+                "lineageTag": "78130283-d3c3-48a8-8459-8537b43fa55c",
+                "ordinal": 0
+              },
+              {
+                "name": "Quarter",
+                "column": "Quarter",
+                "lineageTag": "ea2e0074-78b8-4073-8558-72cd06446696",
+                "ordinal": 1
+              },
+              {
+                "name": "Month",
+                "column": "Month",
+                "lineageTag": "c830a42c-deff-4fb5-a10d-080e13fdfec4",
+                "ordinal": 2
+              },
+              {
+                "name": "Day",
+                "column": "Day",
+                "lineageTag": "96926714-2e9d-45a8-b8ab-a9075ca2b90a",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "155b010c-8e82-414b-910e-27b827bbad65"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "cfda1f05-4243-46c1-a7db-4cd2a9641b69",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_f5783ad7-7bcf-4285-9455-4d701cf7e8c0",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
