@@ -1,5 +1,5 @@
 {
   "objectId": "",
   "type": 4,
-  "explorationState": "{\"version\":\"1.8\",\"activeSection\":\"\",\"sections\":{\"ReportSection\":{\"visualContainers\":{\"c2712a2f0ed7d4aa2e3a\":{\"singleVisual\":{\"visualType\":\"columnChart\",\"mobileVcObjects\":{\"border\":[{\"properties\":{\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"6D\"}}}}}]}}},\"225b4e12ceae6c0d2ded\":{\"singleVisual\":{\"visualType\":\"areaChart\",\"mobileVcObjects\":{\"border\":[{\"properties\":{\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}]}}}}}}}"
+  "explorationState": "{\"version\":\"1.8\",\"activeSection\":\"\",\"sections\":{\"ReportSection\":{\"visualContainers\":{\"225b4e12ceae6c0d2ded\":{\"singleVisual\":{\"visualType\":\"areaChart\",\"mobileVcObjects\":{\"border\":[{\"properties\":{\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"8D\"}}}}}]}}},\"c2712a2f0ed7d4aa2e3a\":{\"singleVisual\":{\"visualType\":\"columnChart\",\"mobileVcObjects\":{\"border\":[{\"properties\":{\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"6D\"}}}}}]}}}}}}}"
 }
