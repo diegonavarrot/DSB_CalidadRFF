@@ -504,6 +504,20 @@
             "sourceColumn": "Dia",
             "sourceProviderType": "int",
             "summarizeBy": "sum"
+          },
+          {
+            "name": "ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "415954a5-8b62-437d-b460-de7b7da93955",
+            "sourceColumn": "ID",
+            "sourceProviderType": "varchar(223)",
+            "summarizeBy": "none"
           }
         ],
         "hierarchies": [
@@ -608,7 +622,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Sql.Database(\"192.168.100.200\\Palenque1\", \"Palenque\", [Query=\"/*#(lf)OBJETIVO: Tickets de CALIDAD RFF [palmicultor y comprador] para generar dashboard de calidad RFF#(lf)AUTOR: Diego Navarro#(lf)FECHA CREACIÓN: 20230921#(lf)FECHA MODIFICACIÓN: --#(lf)*/#(lf)#(lf)SELECT vchPalmicultor Productor,#(lf)#(tab)   'Productor' AS Tipo,#(lf)#(tab)   CONVERT(DATE,dtmFecha) Fecha,#(lf)#(tab)   DATEPART(yy,dtmFecha) 'Año',#(lf)#(tab)   DATEPART(mm,dtmFecha) 'Mes',#(lf)#(tab)   DATEPART(dd,dtmFecha) 'Dia',#(lf)#(tab)   vchCodigoPredio CodigoPredio,#(lf)#(tab)   vchPredio Predio,#(lf)#(tab)   vchTicket Ticket,#(lf)#(tab)   SUM(decKilos) Kilos,#(lf)#(tab)   SUM(decRacimosVerdes) Racimos_Verdes,#(lf)#(tab)   SUM(decRacimosMaduros) Racimos_Maduros,#(lf)#(tab)   SUM(decRacimosSobremaduros) Racimos_SobreMaduros,#(lf)#(tab)   SUM(decRacimosPodridos) Racimos_Podridos,#(lf)#(tab)   SUM(decRacimosInspeccionados) Racimos_Inspeccionados,#(lf)#(tab)   SUM(decRacimosVerdes)/SUM(decRacimosInspeccionados) Pct_Verdes,#(lf)#(tab)   SUM(decRacimosMaduros)/SUM(decRacimosInspeccionados) Pct_Maduros,#(lf)#(tab)   SUM(decRacimosSobremaduros)/SUM(decRacimosInspeccionados) Pct_SobreMaduro,#(lf)#(tab)   SUM(decRacimosPodridos)/SUM(decRacimosInspeccionados) Pct_Podridos,#(lf)#(tab)   SUM(decRacimosVerdes)/SUM(decRacimosInspeccionados) * SUM(decKilos) Kg_Verdes,#(lf)#(tab)   SUM(decRacimosMaduros)/SUM(decRacimosInspeccionados) * SUM(decKilos) Kg_MadurosPonderado,#(lf)#(tab)   SUM(decRacimosSobremaduros)/SUM(decRacimosInspeccionados) * SUM(decKilos) Kg_SobreMaduroPonderado,#(lf)#(tab)   SUM(decRacimosPodridos)/SUM(decRacimosInspeccionados) * SUM(decKilos) Kg_PodridosPonderado#(lf)  FROM vwCOMCompras#(lf) WHERE CONVERT(DATE,dtmFecha) >= '20220101'#(lf)#(tab)   AND decRacimosInspeccionados > 0#(lf)#(tab)   AND intCOMAgricultorKey <> 0#(lf)#(tab)   AND intCOMCompradorKey = 0#(lf) GROUP BY#(lf)#(tab)   vchPalmicultor,#(lf)#(tab)   vchPredio,#(lf)#(tab)   dtmFecha,#(lf)#(tab)   vchCodigoPredio,#(lf)#(tab)   vchPredio,#(lf)#(tab)   vchTicket\"])",
+                "    Source = Sql.Database(\"192.168.100.200\\Palenque1\", \"Palenque\", [Query=\"/*#(lf)OBJETIVO: Tickets de CALIDAD RFF [palmicultor y comprador] para generar dashboard de calidad RFF#(lf)AUTOR: Diego Navarro#(lf)FECHA CREACIÓN: 20230921#(lf)FECHA MODIFICACIÓN: 20231010 Se agrega campo de ID hechizo#(lf)*/#(lf)#(lf)SELECT vchPalmicultor + '-' + vchTicket AS ID,#(lf)#(tab)   vchPalmicultor Productor,#(lf)#(tab)   'Productor' AS Tipo,#(lf)#(tab)   CONVERT(DATE,dtmFecha) Fecha,#(lf)#(tab)   DATEPART(yy,dtmFecha) 'Año',#(lf)#(tab)   DATEPART(mm,dtmFecha) 'Mes',#(lf)#(tab)   DATEPART(dd,dtmFecha) 'Dia',#(lf)#(tab)   vchCodigoPredio CodigoPredio,#(lf)#(tab)   vchPredio Predio,#(lf)#(tab)   vchTicket Ticket,#(lf)#(tab)   SUM(decKilos) Kilos,#(lf)#(tab)   SUM(decRacimosVerdes) Racimos_Verdes,#(lf)#(tab)   SUM(decRacimosMaduros) Racimos_Maduros,#(lf)#(tab)   SUM(decRacimosSobremaduros) Racimos_SobreMaduros,#(lf)#(tab)   SUM(decRacimosPodridos) Racimos_Podridos,#(lf)#(tab)   SUM(decRacimosInspeccionados) Racimos_Inspeccionados,#(lf)#(tab)   SUM(decRacimosVerdes)/SUM(decRacimosInspeccionados) Pct_Verdes,#(lf)#(tab)   SUM(decRacimosMaduros)/SUM(decRacimosInspeccionados) Pct_Maduros,#(lf)#(tab)   SUM(decRacimosSobremaduros)/SUM(decRacimosInspeccionados) Pct_SobreMaduro,#(lf)#(tab)   SUM(decRacimosPodridos)/SUM(decRacimosInspeccionados) Pct_Podridos,#(lf)#(tab)   SUM(decRacimosVerdes)/SUM(decRacimosInspeccionados) * SUM(decKilos) Kg_Verdes,#(lf)#(tab)   SUM(decRacimosMaduros)/SUM(decRacimosInspeccionados) * SUM(decKilos) Kg_MadurosPonderado,#(lf)#(tab)   SUM(decRacimosSobremaduros)/SUM(decRacimosInspeccionados) * SUM(decKilos) Kg_SobreMaduroPonderado,#(lf)#(tab)   SUM(decRacimosPodridos)/SUM(decRacimosInspeccionados) * SUM(decKilos) Kg_PodridosPonderado#(lf)  FROM vwCOMCompras#(lf) WHERE CONVERT(DATE,dtmFecha) >= '20220101'#(lf)#(tab)   AND decRacimosInspeccionados > 0#(lf)#(tab)   AND intCOMAgricultorKey <> 0#(lf)#(tab)   AND intCOMCompradorKey = 0#(lf) GROUP BY#(lf)#(tab)   vchPalmicultor,#(lf)#(tab)   vchPredio,#(lf)#(tab)   dtmFecha,#(lf)#(tab)   vchCodigoPredio,#(lf)#(tab)   vchPredio,#(lf)#(tab)   vchTicket\"])",
                 "in",
                 "    Source"
               ],
